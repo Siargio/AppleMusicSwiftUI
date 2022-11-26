@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA51BBB2930C16D00BEA8A0 /* LibraryView.swift */; };
+		ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC99CFD2932CD3E00C55227 /* ListView.swift */; };
 		ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */; };
 		ECEE31322930BBD800A564A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE31312930BBD800A564A0 /* ContentView.swift */; };
 		ECEE31342930BBD900A564A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEE31332930BBD900A564A0 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECA51BBB2930C16D00BEA8A0 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		ECC99CFD2932CD3E00C55227 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		ECEE312C2930BBD800A564A0 /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
 		ECEE31312930BBD800A564A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECA51BB82930C0F400BEA8A0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ECA51BB92930C10000BEA8A0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE31312930BBD800A564A0 /* ContentView.swift */,
+				ECA51BBB2930C16D00BEA8A0 /* LibraryView.swift */,
+				ECC99CFD2932CD3E00C55227 /* ListView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ECA51BBA2930C10900BEA8A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE31332930BBD900A564A0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		ECEE31232930BBD800A564A0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +81,9 @@
 		ECEE312E2930BBD800A564A0 /* AppleMusicSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */,
-				ECEE31312930BBD800A564A0 /* ContentView.swift */,
-				ECEE31332930BBD900A564A0 /* Assets.xcassets */,
+				ECA51BB82930C0F400BEA8A0 /* App */,
+				ECA51BB92930C10000BEA8A0 /* Sources */,
+				ECA51BBA2930C10900BEA8A0 /* Resources */,
 				ECEE31352930BBD900A564A0 /* Preview Content */,
 			);
 			path = AppleMusicSwiftUI;
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */,
 				ECEE31322930BBD800A564A0 /* ContentView.swift in Sources */,
+				ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */,
 				ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
