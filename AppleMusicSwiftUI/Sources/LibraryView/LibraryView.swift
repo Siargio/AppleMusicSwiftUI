@@ -14,8 +14,7 @@ struct LibraryView: View {
                 Text("Ищите свою музыку?")
                     .bold()
                     .font(.title)
-
-                Text("Здесь появится купленная Вами в iTunes Store Музыка.")
+                Text("Здесь появится купленная Вами в \n iTunes Store Музыка.")
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
                     .font(.title2)
@@ -29,16 +28,7 @@ struct LibraryView: View {
                 Text("Править")
                     .foregroundColor(.red)
             }))
-
-            HStack {
-                VStack {
-                    Image(systemName: "music.note")
-                        .padding(.bottom, 40)
-                }
-                Text("Не исполняется")
-                Image(systemName: "person.fill")
-
-            }
+            Player()
         }
     }
 }
