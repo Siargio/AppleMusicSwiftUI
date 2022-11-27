@@ -55,9 +55,8 @@
 			children = (
 				ECA51BB82930C0F400BEA8A0 /* App */,
 				ECBE4CCE2933645A006E9D34 /* MainView */,
-				ECBE4CCF29336472006E9D34 /* LibraryView */,
+				ECC1BDB32934097D00BD087D /* Modul */,
 				ECBE4CCD29336409006E9D34 /* PlayerView */,
-				ECBE4CCC29335C49006E9D34 /* ListView */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -73,7 +72,6 @@
 		ECBE4CCC29335C49006E9D34 /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				ECBE4CD02933648F006E9D34 /* Model */,
 				ECC99CFD2932CD3E00C55227 /* ListView.swift */,
 				ECBE4CD3293385A6006E9D34 /* ListRowView.swift */,
 			);
@@ -110,6 +108,16 @@
 				ECBE4CD12933649B006E9D34 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ECC1BDB32934097D00BD087D /* Modul */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE4CD02933648F006E9D34 /* Model */,
+				ECBE4CCF29336472006E9D34 /* LibraryView */,
+				ECBE4CCC29335C49006E9D34 /* ListView */,
+			);
+			path = Modul;
 			sourceTree = "<group>";
 		};
 		ECEE31232930BBD800A564A0 = {
