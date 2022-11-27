@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ListRowView: View {
+    
     let items: ModelList
+    @State private var isShowed = false
+    
     var body: some View {
         HStack {
+            ZStack {
+                Button(action: { isShowed.toggle() },
+                       label: {
+                    Image(systemName: "circle")
+                    .foregroundColor(.gray)})
+                if isShowed {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(.pink)
+                        .background(Color.white)
+                        .cornerRadius(10)
+                }
+            }
             Image(systemName: items.icon)
                 .foregroundColor(.red)
             Text(items.name)
@@ -23,6 +38,5 @@ struct ListRowView: View {
 struct ListRow_Previews: PreviewProvider {
     static var previews: some View {
         ListRowView(items: ModelList.model[0])
-            //.previewLayout(.fixed(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/))
     }
 }

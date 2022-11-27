@@ -9,32 +9,30 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        ZStack {
-            TabView {
-                NavigationView {
-                    LibraryView()
-                }
-                .tabItem {
-                    Image(systemName: "music.note.list")
-                    Text("Медиатека")
-                }
-                NavigationView {
-                    LibraryView()
-                }
-                .tabItem {
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                    Text("Радио")
-                }
-                NavigationView {
-                    LibraryView()
-                }
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Поиск")
-                }
+        TabView {
+            NavigationView {
+                LibraryView()
             }
-            .accentColor(.blue)
+            .tabItem {
+                Image(systemName: "music.note.list")
+                Text("Медиатека")
+            }
+            NavigationView {
+                LibraryView()
+            }
+            .tabItem {
+                Image(systemName: "dot.radiowaves.left.and.right")
+                Text("Радио")
+            }
+            NavigationView {
+                LibraryView()
+            }
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Поиск")
+            }
         }
+        .accentColor(.blue)
     }
 }
 
