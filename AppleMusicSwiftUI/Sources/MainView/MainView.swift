@@ -14,22 +14,22 @@ struct MainView: View {
                 LibraryView()
             }
             .tabItem {
-                Image(systemName: "music.note.list")
-                Text("Медиатека")
+                Image(systemName: Strings.iconMedia)
+                Text(Strings.TextMedia)
             }
             NavigationView {
                 LibraryView()
             }
             .tabItem {
-                Image(systemName: "dot.radiowaves.left.and.right")
-                Text("Радио")
+                Image(systemName: Strings.iconRadio)
+                Text(Strings.TextRadio)
             }
             NavigationView {
                 LibraryView()
             }
             .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Поиск")
+                Image(systemName: Strings.iconSearch)
+                Text(Strings.TextSearch)
             }
         }
         .accentColor(.blue)
@@ -39,5 +39,18 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+    }
+}
+
+extension MainView {
+    enum Strings {
+        static let iconMedia = "music.note.list"
+        static let TextMedia = "Медиатека"
+
+        static let iconRadio = "dot.radiowaves.left.and.right"
+        static let TextRadio = "Радио"
+
+        static let iconSearch = "magnifyingglass"
+        static let TextSearch = "Поиск"
     }
 }

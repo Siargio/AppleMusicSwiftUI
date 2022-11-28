@@ -12,25 +12,25 @@ struct Player: View {
         HStack {
             Rectangle()
                 .foregroundColor(.gray)
-                .frame(width: 60, height: 60)
-                .cornerRadius(10)
-                .shadow(radius: 6)
+                .frame(width: Metric.rectangleWidthHeight, height: Metric.rectangleWidthHeight)
+                .cornerRadius(Metric.cornerRadius)
+                .shadow(radius: Metric.shadowRadius)
                 .padding()
-            Text("Жуки - Батарейка!")
+            Text(Metric.textMusic)
             Spacer()
             Button(action: {}) {
-                Image(systemName: "play.fill")
+                Image(systemName: Metric.buttonImagePlay)
                     .foregroundColor(.black)
                     .font(.title3)
             }
             Button(action: {}) {
-                Image(systemName: "forward.fill")
+                Image(systemName: Metric.buttonImagePlayPlay)
                     .foregroundColor(.black)
                     .font(.title3)
                     .padding()
             }
         }
-        .background(Color("grayBackground"))
+        .background(Color(Metric.background))
         .overlay(Divider(), alignment: .bottom)
     }
 }
@@ -38,5 +38,18 @@ struct Player: View {
 struct Player_Previews: PreviewProvider {
     static var previews: some View {
         Player()
+    }
+}
+
+extension Player {
+    enum Metric {
+        static let rectangleWidthHeight: CGFloat = 60
+        static let cornerRadius: CGFloat = 10
+        static let shadowRadius: CGFloat = 6
+
+        static let textMusic = "Жуки - Батарейка!"
+        static let buttonImagePlay = "play.fill"
+        static let buttonImagePlayPlay = "forward.fill"
+        static let background = "grayBackground"
     }
 }

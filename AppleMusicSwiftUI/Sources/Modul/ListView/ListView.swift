@@ -23,11 +23,11 @@ struct ListView: View {
                 }
                 .environment(\.editMode, .constant(.active))
                 .listStyle(.plain)
-                .navigationTitle("Медиатека")
+                .navigationTitle(Strings.media)
                 .navigationBarItems(trailing: Button(action: {
                     dismiss()
                 }) {
-                    Text("Готово")
+                    Text(Strings.TextReady)
                         .foregroundColor(.red)
                 })
             } .navigationBarBackButtonHidden(true)
@@ -43,5 +43,12 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+    }
+}
+
+extension ListView {
+    enum Strings {
+        static let media = "Медиатека"
+        static let TextReady = "Готово"
     }
 }
