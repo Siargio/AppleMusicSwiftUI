@@ -11,22 +11,22 @@ struct LibraryView: View {
     var body: some View {
         VStack() {
             Spacer()
-            Text(Strings.searchMusic)
+            Text(Metric.searchMusic)
                 .bold()
                 .font(.title)
-            Text(Strings.textItuns)
+            Text(Metric.textItuns)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .font(.title2)
             Spacer()
-                .frame(height: 200)
+                .frame(height: Metric.frameHeight)
             Player()
         }
-        .navigationTitle(Strings.media)
+        .navigationTitle(Metric.media)
         .navigationBarItems(trailing: NavigationLink(
             destination: ListView(),
             label: {
-                Text(Strings.textEdit)
+                Text(Metric.textEdit)
                     .foregroundColor(.red)
             }))
     }
@@ -38,11 +38,13 @@ struct LibraryView_Previews: PreviewProvider {
     }
 }
 
-extension LibraryView {
-    enum Strings {
+ private extension LibraryView {
+    enum Metric {
         static let searchMusic = "Ищете свою музыку?"
         static let textItuns = "Здесь появится купленная Вами в \n iTunes Store Музыка."
         static let media = "Медиатека"
         static let textEdit = "Править"
+
+        static let frameHeight: CGFloat = 200
     }
 }

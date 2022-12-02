@@ -16,6 +16,11 @@
 		ECEE31322930BBD800A564A0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE31312930BBD800A564A0 /* MainView.swift */; };
 		ECEE31342930BBD900A564A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEE31332930BBD900A564A0 /* Assets.xcassets */; };
 		ECEE31372930BBD900A564A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEE31362930BBD900A564A0 /* Preview Assets.xcassets */; };
+		ECF0F2522939E27500498870 /* RadioModul.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F2512939E27500498870 /* RadioModul.swift */; };
+		ECF0F2542939F11E00498870 /* ModelRadioHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F2532939F11E00498870 /* ModelRadioHGrid.swift */; };
+		ECF0F257293A0A8F00498870 /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F256293A0A8F00498870 /* LazyVGridView.swift */; };
+		ECF0F259293A38B800498870 /* ModelRadioVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F258293A38B800498870 /* ModelRadioVGrid.swift */; };
+		ECF0F25B293A3CE200498870 /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF0F25A293A3CE200498870 /* LazyHGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		ECEE31312930BBD800A564A0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ECEE31332930BBD900A564A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECEE31362930BBD900A564A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECF0F2512939E27500498870 /* RadioModul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModul.swift; sourceTree = "<group>"; };
+		ECF0F2532939F11E00498870 /* ModelRadioHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRadioHGrid.swift; sourceTree = "<group>"; };
+		ECF0F256293A0A8F00498870 /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
+		ECF0F258293A38B800498870 /* ModelRadioVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRadioVGrid.swift; sourceTree = "<group>"; };
+		ECF0F25A293A3CE200498870 /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,8 @@
 			children = (
 				ECA51BB82930C0F400BEA8A0 /* App */,
 				ECBE4CCE2933645A006E9D34 /* MainView */,
-				ECC1BDB32934097D00BD087D /* Modul */,
+				ECC1BDB32934097D00BD087D /* MediaModul */,
+				ECF0F2502939E23800498870 /* RadioModul */,
 				ECBE4CCD29336409006E9D34 /* PlayerView */,
 			);
 			path = Sources;
@@ -110,14 +121,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ECC1BDB32934097D00BD087D /* Modul */ = {
+		ECC1BDB32934097D00BD087D /* MediaModul */ = {
 			isa = PBXGroup;
 			children = (
 				ECBE4CD02933648F006E9D34 /* Model */,
 				ECBE4CCF29336472006E9D34 /* LibraryView */,
 				ECBE4CCC29335C49006E9D34 /* ListView */,
 			);
-			path = Modul;
+			path = MediaModul;
 			sourceTree = "<group>";
 		};
 		ECEE31232930BBD800A564A0 = {
@@ -152,6 +163,26 @@
 				ECEE31362930BBD900A564A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECF0F2502939E23800498870 /* RadioModul */ = {
+			isa = PBXGroup;
+			children = (
+				ECF0F255293A0A5D00498870 /* Model */,
+				ECF0F2512939E27500498870 /* RadioModul.swift */,
+				ECF0F25A293A3CE200498870 /* LazyHGridView.swift */,
+				ECF0F256293A0A8F00498870 /* LazyVGridView.swift */,
+			);
+			path = RadioModul;
+			sourceTree = "<group>";
+		};
+		ECF0F255293A0A5D00498870 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECF0F2532939F11E00498870 /* ModelRadioHGrid.swift */,
+				ECF0F258293A38B800498870 /* ModelRadioVGrid.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +257,16 @@
 			files = (
 				ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */,
 				ECEE31322930BBD800A564A0 /* MainView.swift in Sources */,
+				ECF0F2542939F11E00498870 /* ModelRadioHGrid.swift in Sources */,
+				ECF0F25B293A3CE200498870 /* LazyHGridView.swift in Sources */,
 				ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */,
+				ECF0F2522939E27500498870 /* RadioModul.swift in Sources */,
+				ECF0F257293A0A8F00498870 /* LazyVGridView.swift in Sources */,
 				ECBE4CD22933649B006E9D34 /* Model.swift in Sources */,
 				ECBE4CCB2933456F006E9D34 /* Player.swift in Sources */,
 				ECBE4CD4293385A6006E9D34 /* ListRowView.swift in Sources */,
 				ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */,
+				ECF0F259293A38B800498870 /* ModelRadioVGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
