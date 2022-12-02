@@ -17,13 +17,13 @@ struct ListRowView: View {
             ZStack {
                 Button(action: { isShowed.toggle() },
                        label: {
-                    Image(systemName: Strings.imageCircle)
+                    Metric.imageCircle
                     .foregroundColor(.gray)})
                 if isShowed {
-                    Image(systemName: Strings.imageCircleFill)
+                    Metric.imageCircleFill
                         .foregroundColor(.pink)
                         .background(Color.white)
-                        .cornerRadius(Strings.cornerRadius)
+                        .cornerRadius(Metric.cornerRadius)
                 }
             }
             Image(systemName: items.icon)
@@ -40,10 +40,10 @@ struct ListRow_Previews: PreviewProvider {
     }
 }
 
-extension ListRowView {
-    enum Strings {
-        static let imageCircle = "circle"
-        static let imageCircleFill = "checkmark.circle.fill"
+private extension ListRowView {
+    enum Metric {
+        static let imageCircle = Image(systemName:"circle")
+        static let imageCircleFill = Image(systemName: "checkmark.circle.fill")
 
         static let cornerRadius: CGFloat = 10
     }

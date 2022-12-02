@@ -41,7 +41,7 @@ struct Player_Previews: PreviewProvider {
     }
 }
 
-extension Player {
+private extension Player {
     enum Metric {
         static let rectangleWidthHeight: CGFloat = 60
         static let cornerRadius: CGFloat = 10

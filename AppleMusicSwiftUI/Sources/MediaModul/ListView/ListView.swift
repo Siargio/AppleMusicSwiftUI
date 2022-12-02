@@ -46,7 +46,7 @@ struct ListView_Previews: PreviewProvider {
     }
 }
 
-extension ListView {
+private extension ListView {
     enum Strings {
         static let media = "Медиатека"
         static let TextReady = "Готово"
