@@ -33,14 +33,13 @@ struct LazyVGridView: View {
     }
 }
 
-
 struct LazyVGridView_Previews: PreviewProvider {
     static var previews: some View {
         LazyVGridView(model: RadioModelVGrid.setups[0])
     }
 }
 
-extension LazyVGridView {
+private extension LazyVGridView {
     enum Metric {
         static let frameWidthHeight: CGFloat = 100
         static let cornerRadius: CGFloat = 10
