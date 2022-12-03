@@ -10,20 +10,41 @@ import SwiftUI
 struct RadioModule: View {
 
     var modelH: [RadioModelHGrid] = RadioModelHGrid.setups
-    var modelV: RadioModelVGrid
+    var modelV: [RadioModelVGrid] = RadioModelVGrid.setups
     let rows = [GridItem(.flexible())]
+    let columns = [GridItem(.flexible())]
 
     var body: some View {
-        ZStack {
-            ScrollView(.vertical, showsIndicators: false) {
-                LazyHGrid(rows: rows) {
-                    ForEach(modelH) { modelH in
-                        
+        VStack {
+            ScrollView(.vertical, showsIndicators: true) {
+                Divider()
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: rows) {
+                        ForEach(modelH) { modelH in
+                            LazyHGridView(model: modelH)
+                        }
+                        .frame(width: UIScreen.main.bounds.width - Metric.frameMain)
+                        .padding(.horizontal)
                     }
+                }
+                VStack {
+                    Divider()
+                }
+                VStack(alignment: .leading) {
+                    Text(Metric.textStation)
+                        .font(.title2)
+                        .bold()
+                        .padding(.leading)
+                        .padding(.top)
 
-                        //.navigationTitle("Радио")
+                    LazyVGrid(columns: columns) {
+                        ForEach(modelV) { modelV in
+                            LazyVGridView(model: modelV)
+                        }
+                    }
                 }
             }
+            .navigationTitle(Metric.textRadio)
             Player()
         }
     }
@@ -31,6 +52,15 @@ struct RadioModule: View {
 
 struct RadioModule_Previews: PreviewProvider {
     static var previews: some View {
-        RadioModule(modelH: modelH, modelV: RadioModelVGrid.setups[0])
+        RadioModule()
+    }
+}
+
+extension RadioModule {
+    enum Metric {
+        static let textStation = "Станции"
+        static let textRadio = "Радио"
+
+        static let frameMain: CGFloat = 70
     }
 }
