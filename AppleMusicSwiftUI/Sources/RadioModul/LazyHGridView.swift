@@ -38,7 +38,7 @@ struct LazyHGridView_Previews: PreviewProvider {
     }
 }
 
-extension LazyHGridView {
+private extension LazyHGridView {
     enum Metric {
         static let cornerRadius: CGFloat = 10
     }

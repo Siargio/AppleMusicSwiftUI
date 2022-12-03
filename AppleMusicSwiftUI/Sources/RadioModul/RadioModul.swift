@@ -36,7 +36,6 @@ struct RadioModule: View {
                         .bold()
                         .padding(.leading)
                         .padding(.top)
-
                     LazyVGrid(columns: columns) {
                         ForEach(modelV) { modelV in
                             LazyVGridView(model: modelV)
@@ -56,7 +55,7 @@ struct RadioModule_Previews: PreviewProvider {
     }
 }
 
-extension RadioModule {
+private extension RadioModule {
     enum Metric {
         static let textStation = "Станции"
         static let textRadio = "Радио"
