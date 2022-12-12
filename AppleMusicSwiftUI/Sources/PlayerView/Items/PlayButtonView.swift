@@ -14,11 +14,11 @@ struct PlayButtonView: View {
     var body: some View {
         HStack {
           Spacer()
-            HStack(spacing: 60) {
+            HStack(spacing: Metric.hStackSpacing) {
                 Button(action: {}) {
-                    Image(systemName: "backward.fill")
+                    Image(systemName: Metric.buttonLeftImage)
                 }
-                .tint(Color ("grayBackground"))
+                .tint(Metric.tintColor)
                 .font(.largeTitle)
                 Button(action: {
                     withAnimation(.spring()) {
@@ -26,17 +26,17 @@ struct PlayButtonView: View {
                     }
                 }) {
                     if isPlaying {
-                        Image(systemName: "play.fill")
+                        Image(systemName: Metric.isPlayingImage)
                     } else {
-                        Image(systemName: "pause.fill")
+                        Image(systemName: Metric.elseIsPlayingImage)
                     }
                 }
-                .tint(Color ("grayBackground"))
+                .tint(Metric.tintColor)
                 .font(.largeTitle)
                 Button(action: {}) {
-                    Image(systemName: "forward.fill")
+                    Image(systemName: Metric.buttonRightImage)
                 }
-                .tint(Color ("grayBackground"))
+                .tint(Metric.tintColor)
                 .font(.largeTitle)
             }
             Spacer()
@@ -47,5 +47,16 @@ struct PlayButtonView: View {
 struct PlayButtonView_Previews: PreviewProvider {
     static var previews: some View {
         PlayButtonView(isPlaying: .constant(false))
+    }
+}
+
+private extension PlayButtonView {
+    enum Metric {
+        static let hStackSpacing: CGFloat = 60
+        static let buttonLeftImage = "backward.fill"
+        static let tintColor = Color ("grayBackground")
+        static let isPlayingImage = "play.fill"
+        static let elseIsPlayingImage = "pause.fill"
+        static let buttonRightImage = "forward.fill"
     }
 }

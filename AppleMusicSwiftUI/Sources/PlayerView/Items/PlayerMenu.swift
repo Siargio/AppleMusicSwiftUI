@@ -13,43 +13,43 @@ struct PlayerMenu: View {
             Section {
                 Button {
                 } label: {
-                    Label("Предлагать меньше похожих", systemImage: "hand.thumbsdown")
+                    Label(Metric.buttonFirstLabel, systemImage: Metric.buttonFirstImage)
                 }
                 Button {
                 } label: {
-                    Label("Нравится", systemImage: "heart")
-                }
-            }
-            Section {
-                Button {
-                } label: {
-                    Label("Показать альбом", systemImage: "music.note")
-                }
-                Button {
-                } label: {
-                    Label("Поделиться песней", systemImage: "square.and.arrow.up")
+                    Label(Metric.buttonTwoLabel, systemImage: Metric.buttonTwoImage)
                 }
             }
             Section {
                 Button {
                 } label: {
-                    Label("Добавить в плейлист", systemImage: "text.badge.plus")
+                    Label(Metric.buttonThreeLabel, systemImage: Metric.buttonThreeImage)
                 }
                 Button {
                 } label: {
-                    Label("Удалить из Медиатеки", systemImage: "trash")
+                    Label(Metric.buttonFourLabel, systemImage: Metric.buttonFourImage)
+                }
+            }
+            Section {
+                Button {
+                } label: {
+                    Label(Metric.buttonFifeLabel, systemImage: Metric.buttonFifeImage)
+                }
+                Button {
+                } label: {
+                    Label(Metric.buttonSixLabel, systemImage: Metric.buttonSixImage)
                 }
             }
         } label: {
-            Image(systemName: "ellipsis.circle.fill")
+            Image(systemName: Metric.imageLabel)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 24, height: 24)
+                .frame(width: Metric.frameWidthAndHeight, height: Metric.frameWidthAndHeight)
                 .background(
-                    Color("grayBackground")
-                        .clipShape(RoundedRectangle(cornerRadius: 18))
+                    Metric.backgroundColor
+                        .clipShape(RoundedRectangle(cornerRadius: Metric.cornerRadius))
                 )
-                .foregroundColor(Color("darkGray").opacity(0.8))
+                .foregroundColor(Metric.foregroundColor.opacity(Metric.opacity))
         }
         .foregroundColor(.clear)
         .accentColor(.primary)
@@ -59,5 +59,36 @@ struct PlayerMenu: View {
 struct PlayerMenu_Previews: PreviewProvider {
     static var previews: some View {
         PlayerMenu()
+    }
+}
+
+private extension PlayerMenu {
+    enum Metric {
+        static let buttonFirstLabel = "Предлагать меньше похожих"
+        static let buttonFirstImage = "hand.thumbsdown"
+
+        static let buttonTwoLabel = "Нравится"
+        static let buttonTwoImage = "heart"
+
+        static let buttonThreeLabel = "Показать альбом"
+        static let buttonThreeImage = "music.note"
+
+        static let buttonFourLabel = "Поделиться песней"
+        static let buttonFourImage = "square.and.arrow.up"
+
+        static let buttonFifeLabel = "Добавить в плейлист"
+        static let buttonFifeImage = "text.badge.plus"
+
+        static let buttonSixLabel = "Удалить из Медиатеки"
+        static let buttonSixImage = "trash"
+
+        static let imageLabel = "ellipsis.circle.fill"
+        static let backgroundColor = Color("grayBackground")
+        static let foregroundColor = Color("darkGray")
+
+        static let frameWidthAndHeight: CGFloat = 24
+        static let cornerRadius: CGFloat = 18
+        static let opacity: CGFloat = 0.8
+
     }
 }

@@ -11,20 +11,20 @@ struct ButtonsView: View {
     var body: some View {
         HStack {
           Spacer()
-            HStack(spacing: 60) {
+            HStack(spacing: Metric.hStachSpacing) {
                 Button(action: {}) {
-                    Image(systemName: "quote.bubble")
-                        .tint(Color ("grayBackground"))
+                    Image(systemName: Metric.buttonLeftImage)
+                        .tint(Metric.buttonTintColor)
                         .font(.title2)
                 }
                 Button(action: {}) {
-                    Image(systemName: "airplayaudio")
-                        .tint(Color ("grayBackground"))
+                    Image(systemName: Metric.buttonCentreImage)
+                        .tint(Metric.buttonTintColor)
                         .font(.title2)
                 }
                 Button(action: {}) {
-                    Image(systemName: "list.bullet")
-                        .tint(Color ("grayBackground"))
+                    Image(systemName: Metric.buttonRightImage)
+                        .tint(Metric.buttonTintColor)
                         .font(.title2)
                 }
             }
@@ -36,5 +36,16 @@ struct ButtonsView: View {
 struct ButtonsView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonsView()
+    }
+}
+
+private extension ButtonsView {
+    enum Metric {
+        static let hStachSpacing: CGFloat = 60
+
+        static let buttonLeftImage = "quote.bubble"
+        static let buttonTintColor = Color ("grayBackground")
+        static let buttonCentreImage = "airplayaudio"
+        static let buttonRightImage = "list.bullet"
     }
 }
