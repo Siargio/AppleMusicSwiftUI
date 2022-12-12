@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC6F3482294684EA00C73A4E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6F3481294684EA00C73A4E /* SearchView.swift */; };
 		ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA51BBB2930C16D00BEA8A0 /* LibraryView.swift */; };
 		ECBE4CCB2933456F006E9D34 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE4CCA2933456F006E9D34 /* Player.swift */; };
 		ECBE4CD22933649B006E9D34 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE4CD12933649B006E9D34 /* Model.swift */; };
 		ECBE4CD4293385A6006E9D34 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBE4CD3293385A6006E9D34 /* ListRowView.swift */; };
+		ECC289F32947178C00141665 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F22947178C00141665 /* PlayerDetailView.swift */; };
+		ECC289F629471C1200141665 /* ModelSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F529471C1200141665 /* ModelSearch.swift */; };
+		ECC289F929471C8700141665 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F829471C8700141665 /* ImageView.swift */; };
+		ECC289FB29471E9A00141665 /* TrackInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289FA29471E9A00141665 /* TrackInfoView.swift */; };
+		ECC289FD29471F0000141665 /* PlayerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289FC29471F0000141665 /* PlayerMenu.swift */; };
+		ECC289FF29471F5300141665 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289FE29471F5300141665 /* TimeView.swift */; };
+		ECC28A0129471FAD00141665 /* PlayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC28A0029471FAD00141665 /* PlayButtonView.swift */; };
+		ECC28A0329471FF900141665 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC28A0229471FF900141665 /* VolumeView.swift */; };
+		ECC28A052947204800141665 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC28A042947204800141665 /* ButtonsView.swift */; };
 		ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC99CFD2932CD3E00C55227 /* ListView.swift */; };
 		ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */; };
 		ECEE31322930BBD800A564A0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE31312930BBD800A564A0 /* MainView.swift */; };
@@ -24,10 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC6F3481294684EA00C73A4E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		ECA51BBB2930C16D00BEA8A0 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		ECBE4CCA2933456F006E9D34 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		ECBE4CD12933649B006E9D34 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ECBE4CD3293385A6006E9D34 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		ECC289F22947178C00141665 /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		ECC289F529471C1200141665 /* ModelSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearch.swift; sourceTree = "<group>"; };
+		ECC289F829471C8700141665 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		ECC289FA29471E9A00141665 /* TrackInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfoView.swift; sourceTree = "<group>"; };
+		ECC289FC29471F0000141665 /* PlayerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMenu.swift; sourceTree = "<group>"; };
+		ECC289FE29471F5300141665 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		ECC28A0029471FAD00141665 /* PlayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButtonView.swift; sourceTree = "<group>"; };
+		ECC28A0229471FF900141665 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		ECC28A042947204800141665 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		ECC99CFD2932CD3E00C55227 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		ECEE312C2930BBD800A564A0 /* AppleMusicSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEE312F2930BBD800A564A0 /* AppleMusicSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -52,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC6F3480294684A100C73A4E /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				ECC289F429471BFF00141665 /* Model */,
+				EC6F3481294684EA00C73A4E /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
 		ECA51BB82930C0F400BEA8A0 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +96,7 @@
 				ECBE4CCE2933645A006E9D34 /* MainView */,
 				ECC1BDB32934097D00BD087D /* MediaModul */,
 				ECF0F2502939E23800498870 /* RadioModul */,
+				EC6F3480294684A100C73A4E /* SearchView */,
 				ECBE4CCD29336409006E9D34 /* PlayerView */,
 			);
 			path = Sources;
@@ -93,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				ECBE4CCA2933456F006E9D34 /* Player.swift */,
+				ECC289F22947178C00141665 /* PlayerDetailView.swift */,
+				ECC289F729471C6800141665 /* Items */,
 			);
 			path = PlayerView;
 			sourceTree = "<group>";
@@ -129,6 +161,28 @@
 				ECBE4CCC29335C49006E9D34 /* ListView */,
 			);
 			path = MediaModul;
+			sourceTree = "<group>";
+		};
+		ECC289F429471BFF00141665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECC289F529471C1200141665 /* ModelSearch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECC289F729471C6800141665 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				ECC289F829471C8700141665 /* ImageView.swift */,
+				ECC289FA29471E9A00141665 /* TrackInfoView.swift */,
+				ECC289FC29471F0000141665 /* PlayerMenu.swift */,
+				ECC289FE29471F5300141665 /* TimeView.swift */,
+				ECC28A0029471FAD00141665 /* PlayButtonView.swift */,
+				ECC28A0229471FF900141665 /* VolumeView.swift */,
+				ECC28A042947204800141665 /* ButtonsView.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		ECEE31232930BBD800A564A0 = {
@@ -255,16 +309,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC289FF29471F5300141665 /* TimeView.swift in Sources */,
 				ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */,
 				ECEE31322930BBD800A564A0 /* MainView.swift in Sources */,
+				ECC289F32947178C00141665 /* PlayerDetailView.swift in Sources */,
 				ECF0F2542939F11E00498870 /* ModelRadioHGrid.swift in Sources */,
 				ECF0F25B293A3CE200498870 /* LazyHGridView.swift in Sources */,
 				ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */,
+				ECC28A0329471FF900141665 /* VolumeView.swift in Sources */,
 				ECF0F2522939E27500498870 /* RadioModul.swift in Sources */,
+				ECC289FB29471E9A00141665 /* TrackInfoView.swift in Sources */,
+				ECC289F629471C1200141665 /* ModelSearch.swift in Sources */,
+				ECC289F929471C8700141665 /* ImageView.swift in Sources */,
 				ECF0F257293A0A8F00498870 /* LazyVGridView.swift in Sources */,
+				ECC28A0129471FAD00141665 /* PlayButtonView.swift in Sources */,
+				ECC28A052947204800141665 /* ButtonsView.swift in Sources */,
 				ECBE4CD22933649B006E9D34 /* Model.swift in Sources */,
+				EC6F3482294684EA00C73A4E /* SearchView.swift in Sources */,
 				ECBE4CCB2933456F006E9D34 /* Player.swift in Sources */,
 				ECBE4CD4293385A6006E9D34 /* ListRowView.swift in Sources */,
+				ECC289FD29471F0000141665 /* PlayerMenu.swift in Sources */,
 				ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */,
 				ECF0F259293A38B800498870 /* ModelRadioVGrid.swift in Sources */,
 			);

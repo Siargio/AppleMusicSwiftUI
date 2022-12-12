@@ -8,30 +8,52 @@
 import SwiftUI
 
 struct Player: View {
+
+    @State private var isShowingDetailsPlayer = false
+    @State private var track = AlbumDataModel.mocks.randomElement()
+    @Environment(\.colorScheme) var colorScheme
+
     var body: some View {
-        HStack {
-            Rectangle()
-                .foregroundColor(.gray)
-                .frame(width: Metric.rectangleWidthHeight, height: Metric.rectangleWidthHeight)
-                .cornerRadius(Metric.cornerRadius)
-                .shadow(radius: Metric.shadowRadius)
-                .padding()
-            Text(Metric.textMusic)
-            Spacer()
-            Button(action: {}) {
-                Image(systemName: Metric.buttonImagePlay)
-                    .foregroundColor(.black)
-                    .font(.title3)
+        VStack {
+            HStack {
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: Metric.rectangleWidthHeight, height: Metric.rectangleWidthHeight)
+                        .cornerRadius(Metric.cornerRadius)
+                        .shadow(radius: Metric.shadowRadius)
+                        .padding()
+                    Image(track?.image ?? Metric.musicNote)
+                        .resizable()
+                        .frame(width: Metric.rectangleWidthHeight, height: Metric.rectangleWidthHeight)
+                        .cornerRadius(Metric.cornerRadius)
+                        .shadow(radius: Metric.shadowRadius)
+                        .scaledToFit()
+                }
+                Text(track?.song ?? Metric.textMusic)
+                Spacer()
+                Button(action: {}) {
+                    Image(systemName: Metric.buttonImagePlay)
+                        .foregroundColor(.black)
+                        .font(.title3)
+                }
+                Button(action: {}) {
+                    Image(systemName: Metric.buttonImagePlayPlay)
+                        .foregroundColor(.black)
+                        .font(.title3)
+                        .padding()
+                }
             }
-            Button(action: {}) {
-                Image(systemName: Metric.buttonImagePlayPlay)
-                    .foregroundColor(.black)
-                    .font(.title3)
-                    .padding()
-            }
+            .background(Color(Metric.background))
+            .overlay(Divider(), alignment: .bottom)
         }
-        .background(Color(Metric.background))
-        .overlay(Divider(), alignment: .bottom)
+        .onTapGesture {
+            isShowingDetailsPlayer.toggle()
+        }
+        .fullScreenCover(isPresented: $isShowingDetailsPlayer) {
+            PlayerDetailView(track: track ?? AlbumDataModel(author: "Земфира", song: "Прости меня моя любовь", image: "земфира", duration: 180))
+
+        }
     }
 }
 
@@ -51,5 +73,6 @@ private extension Player {
         static let buttonImagePlay = "play.fill"
         static let buttonImagePlayPlay = "forward.fill"
         static let background = "grayBackground"
+        static let musicNote = "music.note"
     }
 }
