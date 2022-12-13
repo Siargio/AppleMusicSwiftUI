@@ -15,6 +15,14 @@
 		ECBF789D29485A3D00BDB5F2 /* CategorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF789C29485A3D00BDB5F2 /* CategorySearchView.swift */; };
 		ECBF78A029485B8900BDB5F2 /* CategorySearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF789F29485B8900BDB5F2 /* CategorySearchDetailView.swift */; };
 		ECBF78A229485D0700BDB5F2 /* AlbumSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78A129485D0700BDB5F2 /* AlbumSectionView.swift */; };
+		ECBF78A529487A7500BDB5F2 /* FavoritePlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78A429487A7500BDB5F2 /* FavoritePlayList.swift */; };
+		ECBF78A729487BF700BDB5F2 /* FavoritePlayListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78A629487BF700BDB5F2 /* FavoritePlayListSection.swift */; };
+		ECBF78A9294891FF00BDB5F2 /* HorizontalSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78A8294891FF00BDB5F2 /* HorizontalSectionTitleView.swift */; };
+		ECBF78AB2948930400BDB5F2 /* HorizontalListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78AA2948930400BDB5F2 /* HorizontalListCellView.swift */; };
+		ECBF78AD2948942800BDB5F2 /* HorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78AC2948942800BDB5F2 /* HorizontalListView.swift */; };
+		ECBF78AF294896BD00BDB5F2 /* HorizontalSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78AE294896BD00BDB5F2 /* HorizontalSectionView.swift */; };
+		ECBF78B1294897D800BDB5F2 /* HorizontalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78B0294897D800BDB5F2 /* HorizontalCellView.swift */; };
+		ECBF78B429489E0D00BDB5F2 /* AlbumCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBF78B329489E0D00BDB5F2 /* AlbumCategoryModel.swift */; };
 		ECC289F32947178C00141665 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F22947178C00141665 /* PlayerDetailView.swift */; };
 		ECC289F629471C1200141665 /* ModelSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F529471C1200141665 /* ModelSearch.swift */; };
 		ECC289F929471C8700141665 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC289F829471C8700141665 /* ImageView.swift */; };
@@ -46,6 +54,14 @@
 		ECBF789C29485A3D00BDB5F2 /* CategorySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchView.swift; sourceTree = "<group>"; };
 		ECBF789F29485B8900BDB5F2 /* CategorySearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchDetailView.swift; sourceTree = "<group>"; };
 		ECBF78A129485D0700BDB5F2 /* AlbumSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSectionView.swift; sourceTree = "<group>"; };
+		ECBF78A429487A7500BDB5F2 /* FavoritePlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlayList.swift; sourceTree = "<group>"; };
+		ECBF78A629487BF700BDB5F2 /* FavoritePlayListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlayListSection.swift; sourceTree = "<group>"; };
+		ECBF78A8294891FF00BDB5F2 /* HorizontalSectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSectionTitleView.swift; sourceTree = "<group>"; };
+		ECBF78AA2948930400BDB5F2 /* HorizontalListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListCellView.swift; sourceTree = "<group>"; };
+		ECBF78AC2948942800BDB5F2 /* HorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListView.swift; sourceTree = "<group>"; };
+		ECBF78AE294896BD00BDB5F2 /* HorizontalSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSectionView.swift; sourceTree = "<group>"; };
+		ECBF78B0294897D800BDB5F2 /* HorizontalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCellView.swift; sourceTree = "<group>"; };
+		ECBF78B329489E0D00BDB5F2 /* AlbumCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCategoryModel.swift; sourceTree = "<group>"; };
 		ECC289F22947178C00141665 /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
 		ECC289F529471C1200141665 /* ModelSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearch.swift; sourceTree = "<group>"; };
 		ECC289F829471C8700141665 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -176,8 +192,32 @@
 			isa = PBXGroup;
 			children = (
 				ECBF789F29485B8900BDB5F2 /* CategorySearchDetailView.swift */,
+				ECBF78B229489DF800BDB5F2 /* Model */,
+				ECBF78A329487A5C00BDB5F2 /* Items */,
 			);
 			path = SearchDetailView;
+			sourceTree = "<group>";
+		};
+		ECBF78A329487A5C00BDB5F2 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF78A429487A7500BDB5F2 /* FavoritePlayList.swift */,
+				ECBF78A629487BF700BDB5F2 /* FavoritePlayListSection.swift */,
+				ECBF78A8294891FF00BDB5F2 /* HorizontalSectionTitleView.swift */,
+				ECBF78AA2948930400BDB5F2 /* HorizontalListCellView.swift */,
+				ECBF78AC2948942800BDB5F2 /* HorizontalListView.swift */,
+				ECBF78AE294896BD00BDB5F2 /* HorizontalSectionView.swift */,
+				ECBF78B0294897D800BDB5F2 /* HorizontalCellView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		ECBF78B229489DF800BDB5F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECBF78B329489E0D00BDB5F2 /* AlbumCategoryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ECC1BDB32934097D00BD087D /* MediaModul */ = {
@@ -337,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBF78A529487A7500BDB5F2 /* FavoritePlayList.swift in Sources */,
 				ECC289FF29471F5300141665 /* TimeView.swift in Sources */,
 				ECC99CFE2932CD3E00C55227 /* ListView.swift in Sources */,
 				ECBF78A029485B8900BDB5F2 /* CategorySearchDetailView.swift in Sources */,
@@ -345,11 +386,15 @@
 				ECF0F2542939F11E00498870 /* ModelRadioHGrid.swift in Sources */,
 				ECF0F25B293A3CE200498870 /* LazyHGridView.swift in Sources */,
 				ECC28A0B2947C5A400141665 /* CategoryModel.swift in Sources */,
+				ECBF78AD2948942800BDB5F2 /* HorizontalListView.swift in Sources */,
 				ECA51BBC2930C16D00BEA8A0 /* LibraryView.swift in Sources */,
 				ECC28A0329471FF900141665 /* VolumeView.swift in Sources */,
+				ECBF78A729487BF700BDB5F2 /* FavoritePlayListSection.swift in Sources */,
+				ECBF78B429489E0D00BDB5F2 /* AlbumCategoryModel.swift in Sources */,
 				ECF0F2522939E27500498870 /* RadioModul.swift in Sources */,
 				ECBF789D29485A3D00BDB5F2 /* CategorySearchView.swift in Sources */,
 				ECC289FB29471E9A00141665 /* TrackInfoView.swift in Sources */,
+				ECBF78AF294896BD00BDB5F2 /* HorizontalSectionView.swift in Sources */,
 				ECC289F629471C1200141665 /* ModelSearch.swift in Sources */,
 				ECBF78A229485D0700BDB5F2 /* AlbumSectionView.swift in Sources */,
 				ECC289F929471C8700141665 /* ImageView.swift in Sources */,
@@ -359,8 +404,11 @@
 				ECBE4CD22933649B006E9D34 /* Model.swift in Sources */,
 				EC6F3482294684EA00C73A4E /* SearchView.swift in Sources */,
 				ECBE4CCB2933456F006E9D34 /* Player.swift in Sources */,
+				ECBF78AB2948930400BDB5F2 /* HorizontalListCellView.swift in Sources */,
 				ECBE4CD4293385A6006E9D34 /* ListRowView.swift in Sources */,
 				ECC289FD29471F0000141665 /* PlayerMenu.swift in Sources */,
+				ECBF78B1294897D800BDB5F2 /* HorizontalCellView.swift in Sources */,
+				ECBF78A9294891FF00BDB5F2 /* HorizontalSectionTitleView.swift in Sources */,
 				ECEE31302930BBD800A564A0 /* AppleMusicSwiftUIApp.swift in Sources */,
 				ECF0F259293A38B800498870 /* ModelRadioVGrid.swift in Sources */,
 			);
