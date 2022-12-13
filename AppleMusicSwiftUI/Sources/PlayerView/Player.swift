@@ -52,7 +52,6 @@ struct Player: View {
         }
         .fullScreenCover(isPresented: $isShowingDetailsPlayer) {
             PlayerDetailView(track: track ?? AlbumDataModel(author: "Земфира", song: "Прости меня моя любовь", image: "земфира", duration: 180))
-
         }
     }
 }

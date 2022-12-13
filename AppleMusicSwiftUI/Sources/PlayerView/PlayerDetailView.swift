@@ -12,19 +12,19 @@ struct PlayerDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @State var track: AlbumDataModel
     @State var isPlaying = false
-    let gradient = Gradient(colors: [.gray, Color ("darkGray"), .gray])
+    let gradient = Gradient(colors: [.gray, Metric.gradientColor, .gray])
 
     var body: some View {
         ZStack {
             Rectangle()
-                .blur(radius: 20)
+                .blur(radius: Metric.rectangleBlurRadius)
             VStack {
                 VStack {
                     Capsule()
-                        .fill(Color ("grayBackground").opacity(0.3))
-                        .frame(width: 40, height: 5)
-                        .cornerRadius(2)
-                    Spacer(minLength: 50)
+                        .fill(Metric.capsuleColor.opacity(Metric.opacity))
+                        .frame(width: Metric.capsuleFrameWidth, height: Metric.capsuleFrameHeight)
+                        .cornerRadius(Metric.capsuleCornetRadius)
+                    Spacer(minLength: Metric.capsuleCornetRadius)
                     ImageView(track: track,
                               isPlaying: $isPlaying)
                     Spacer()
@@ -39,7 +39,7 @@ struct PlayerDetailView: View {
                 ButtonsView()
                     .padding(.bottom)
             }
-            .padding(.horizontal, 30)
+            .padding(.horizontal, Metric.paddingHorizontal)
             .background(LinearGradient(
                 gradient: gradient,
                 startPoint: .bottom,
@@ -47,7 +47,7 @@ struct PlayerDetailView: View {
         }
         .gesture(
             DragGesture().onEnded { value in
-                if value.location.y - value.startLocation.y > 100 {
+                if value.location.y - value.startLocation.y > Metric.value {
                     dismiss()
                 }
             }
@@ -59,5 +59,21 @@ struct PlayerDetailView: View {
 struct PlayerDetailView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerDetailView(track: AlbumDataModel.mocks.randomElement() ?? AlbumDataModel(author: "Земфира", song: "Прости меня моя любовь", image: "земфира", duration: 284))
+    }
+}
+
+private extension PlayerDetailView {
+    enum Metric {
+        static let gradientColor = Color ("darkGray")
+        static let capsuleColor = Color ("grayBackground")
+
+        static let rectangleBlurRadius: CGFloat = 20
+        static let opacity: CGFloat = 0.3
+        static let capsuleFrameWidth: CGFloat = 40
+        static let capsuleFrameHeight: CGFloat = 5
+        static let capsuleCornetRadius: CGFloat = 2
+        static let spacer: CGFloat = 50
+        static let paddingHorizontal: CGFloat = 30
+        static let value: CGFloat = 100
     }
 }

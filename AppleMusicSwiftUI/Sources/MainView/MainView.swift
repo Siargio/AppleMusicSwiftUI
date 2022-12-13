@@ -42,7 +42,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension MainView {
+private extension MainView {
     enum Metric {
         static let iconMedia = Image(systemName: "music.note.list")
         static let TextMedia = "Медиатека"
