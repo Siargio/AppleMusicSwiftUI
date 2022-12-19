@@ -25,7 +25,7 @@ struct MainView: View {
                 Text(Metric.TextRadio)
             }
             NavigationView {
-                SearchView()
+                MainSearchUIKitView()
             }
             .tabItem {
                 Metric.iconSearch
